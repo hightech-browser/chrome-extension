@@ -5,8 +5,11 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["app/main.js"]
+      "js": ["libs/socket.io.js", "app/main.js"]
     }
+  ],
+  "permissions": [
+    "http://localhost"
   ],
   "options_page": "app/options/index.html",
   "permissions": [
