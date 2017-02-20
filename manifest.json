@@ -1,0 +1,18 @@
+{
+  "name": "Hightech Browser",
+  "version": "0.0.1",
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["app/main.js"]
+    }
+  ],
+  "options_page": "app/options/index.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "manifest_version": 2
+}
