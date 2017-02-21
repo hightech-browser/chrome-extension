@@ -11,9 +11,13 @@
   "permissions": [
     "http://localhost"
   ],
-  "options_page": "app/options/index.html",
+  "browser_action": {
+    "default_title": "Google Mail",
+    "default_popup": "app/options/index.html"
+  },
   "permissions": [
     "tabs",
+    "storage",
     "http://*/*",
     "https://*/*"
   ],

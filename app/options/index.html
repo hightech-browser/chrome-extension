@@ -1,1 +1,25 @@
-<h1>test!!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hightech Browser</title>
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h3 class="text-center">Settings</h3>
+  <div class="form-group">
+    <label for="name">Machine Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Machine Name">
+  </div>
+  <button id="update" class="btn btn-primary">Update</button>
+  <p id="message"></p>
+  <div class="clearfix"></div>
+  <h4 class="text-center">Machine Code</h4>
+  <i id="hash-code" class="text-center"></i>
+  <div id="qrcode"></div>
+  <script type="text/javascript" src="lib/jquery.js"></script>
+  <script type="text/javascript" src="lib/qrcode.js"></script>
+  <script type="text/javascript" src="lib/socket.io.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
